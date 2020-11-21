@@ -28,16 +28,16 @@ class Paint(object):
         self.root.configure(bg="black")
 
 
-        self.rect_button = Button(self.root, text='rectangle', command=self.use_rect, width=12, height=3)
+        self.rect_button = Button(self.root, text='rectangle', command=self.use_rect, width=12, height=3,background='yellow')
         self.rect_button.grid(row=0, column=2)
 
-        self.poly_button = Button(self.root, text='stroke', command=self.use_poly, width=12, height=3)
+        self.poly_button = Button(self.root, text='stroke', command=self.use_poly, width=12, height=3,background='yellow')
         self.poly_button.grid(row=1, column=2)
 
-        self.revoke_button = Button(self.root, text='revoke', command=self.revoke, width=12, height=3)
+        self.revoke_button = Button(self.root, text='revoke', command=self.revoke, width=12, height=3,background='yellow')
         self.revoke_button.grid(row=2, column=2)
 
-        self.clear_button = Button(self.root, text='clear', command=self.clear, width=12, height=3)
+        self.clear_button = Button(self.root, text='clear', command=self.clear, width=12, height=3,background='yellow')
         self.clear_button.grid(row=3, column=2)
 
         self.c = Canvas(self.root, bg='white', width=config.img_shapes[1]+8, height=config.img_shapes[0])
@@ -46,13 +46,13 @@ class Paint(object):
         self.out = Canvas(self.root, bg='white', width=config.img_shapes[1]+8, height=config.img_shapes[0])
         self.out.grid(row=0, column=1, rowspan=8)
 
-        self.save_button = Button(self.root, text="save", command=self.save, width=12, height=3)
+        self.save_button = Button(self.root, text="save", command=self.save, width=12, height=3,background='yellow')
         self.save_button.grid(row=6, column=2)
 
-        self.load_button = Button(self.root, text='load', command=self.load, width=12, height=3)
+        self.load_button = Button(self.root, text='load', command=self.load, width=12, height=3,background='yellow')
         self.load_button.grid(row=5, column=2)
 
-        self.fill_button = Button(self.root, text='fill', command=self.fill, width=12, height=3)
+        self.fill_button = Button(self.root, text='fill', command=self.fill, width=12, height=3,background='yellow')
         self.fill_button.grid(row=7, column=2)
         self.filename = None
 
