@@ -8,7 +8,6 @@ import subprocess
 import argparse
 import tensorflow as tf
 from options.test_options import TestOptions
-
 from net.network import GMCNNModel
 
 # os.environ['CUDA_VISIBLE_DEVICES'] = str(np.argmax([int(x.split()[2]) for x in subprocess.Popen(
@@ -265,8 +264,8 @@ class Paint(object):
     def icon2mice(self, event):
         return
 
-
 if __name__ == '__main__':
     config = TestOptions().parse()
     config.mode = 'silent'
     ge = Paint(config)
+    
