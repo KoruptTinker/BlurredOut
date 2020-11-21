@@ -25,6 +25,9 @@ class Paint(object):
 
         self.root = Tk()
 
+        self.root.configure(bg="black")
+
+
         self.rect_button = Button(self.root, text='rectangle', command=self.use_rect, width=12, height=3)
         self.rect_button.grid(row=0, column=2)
 
